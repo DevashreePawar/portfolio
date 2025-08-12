@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devashree Pawar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
 
+    <body>
+        <!-- Navigation -->
+    <nav>
+        <h1>Devashree Pawar</h1>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Hi, I'm <span>Devashree</span></h2>
+            <p>Data Science MS Student | AI Researcher | Machine Learning Engineer</p>
+            <a href="#contact" class="btn">Let’s Connect</a>
+        </div>
+        <img src="assets/profile.jpg" alt="Devashree">
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m Devashree Pawar, a Master’s student in Data Science at the University of Arizona with a passion for using AI and analytics to solve real-world problems. From healthcare research to business insights, I turn data into stories and solutions. When I’m not coding or visualizing trends, you’ll find me volunteering for Women in STEM initiatives or dancing my heart out.</p>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="exp-card">
+            <h3>Student Researcher - University of Arizona</h3>
+            <p>As a Student Researcher in the AI and healthcare domain, I am developing a Multimodal Mixture of Experts (MMoE) model that integrates medical imaging (X-rays, MRIs), clinical narratives, and structured patient data to enhance disease prediction accuracy. My work involves building data pipelines, leveraging Large Language Models (LLMs) and Vision-Language Models (VLMs) for cross-modal reasoning, and applying prompt engineering and NLP techniques to extract insights from unstructured healthcare text. I train and deploy deep learning models using PyTorch, TensorFlow, and High-Performance Computing (HPC) systems, while collaborating closely with medical researchers, AI engineers, and data scientists to bridge technical innovation with real-world healthcare impact.</p>
+        </div>
+        <div class="exp-card">
+            <h3>Machine Learning Intern - Care Risk Solutions</h3>
+            <p>During my internship at Care Risk Solution, I developed machine learning models for large-scale banking data analysis to identify credit risk patterns, achieving a 15% improvement in prediction accuracy. I explored quantum-inspired optimization methods, including Variational Quantum Classifiers (VQCs) and quantum kernel approaches, comparing them with classical ML models. My contributions included building robust feature engineering pipelines, optimizing data preprocessing workflows, and implementing classification and regression techniques using Python, Scikit-learn, and NumPy, resulting in reduced processing time and enhanced model performance.</p>
+        </div>
+        <div class="exp-card">
+            <h3>Data Analytics Intern - Bhundal Infotech</h3>
+            <p>At Bhundal Infotech, I streamlined operations by creating end-to-end automation workflows with UiPath, reducing manual effort and improving data accuracy. I developed SQL-based pipelines for data extraction, validation, and storage, ensuring timely and reliable information flow. By collaborating with business teams, I designed automation solutions that increased process efficiency by 20% and integrated RPA solutions with APIs for seamless execution. My work also focused on eliminating data bottlenecks, supporting reporting optimization, and ensuring smooth scalability for automation initiatives.</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+        <div class="filter-btns">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="ml">Machine Learning</button>
+            <button data-filter="viz">Data Visualization</button>
+        </div>
+
+        <div class="project-container">
+            <div class="project-card" data-category="viz">
+                <h3>Global Energy Trend</h3>
+                <p>EDA on 100+ years of energy data with SQL, Python, and dashboards.</p>
+                <a href="https://github.com/DevashreePawar/Global-Energy-Trend" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-category="viz">
+                <h3>Decoding E-commerce Trends</h3>
+                <p>Forecasted seasonal sales with R and Power BI.</p>
+            </div>
+            <div class="project-card" data-category="ml">
+                <h3>Bankruptcy Risk Prediction</h3>
+                <p>Achieved 96% accuracy using XGBoost, deployed via Azure MLOps.</p>
+            </div>
+        </div>
+    </section>
