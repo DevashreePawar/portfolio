@@ -1,82 +1,681 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devashree Pawar | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Devashree Pawar, Data Analyst and AI Engineer building LLM agents, NL2SQL systems, dashboards, and AI-powered analytics tools.">
+  <title>Devashree Pawar | Data Analyst & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <body>
-        <!-- Navigation -->
-    <nav>
-        <h1>Devashree Pawar</h1>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Hi, I'm <span>Devashree</span></h2>
-            <p>Data Science MS Student | AI Researcher | Machine Learning Engineer</p>
-            <a href="#contact" class="btn">Let’s Connect</a>
-        </div>
-        <img src="assets/profile.jpg" alt="Devashree">
-    </section>
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Home">DP</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://drive.google.com/drive/folders/1D3eNPVBk3zPSLcpoDVz3kivh8liJfI3o?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto" target="_blank" rel="noopener noreferrer" class="btn-resume">Download Resume</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I’m Devashree Pawar, a Master’s student in Data Science at the University of Arizona with a passion for using AI and analytics to solve real-world problems. From healthcare research to business insights, I turn data into stories and solutions. When I’m not coding or visualizing trends, you’ll find me volunteering for Women in STEM initiatives or dancing my heart out.</p>
-    </section>
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-glow-tl" aria-hidden="true"></div>
+    <div class="hero-glow-br" aria-hidden="true"></div>
 
-    <!-- Experience -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="exp-card">
-            <h3>Student Researcher - University of Arizona</h3>
-            <p>As a Student Researcher in the AI and healthcare domain, I am developing a Multimodal Mixture of Experts (MMoE) model that integrates medical imaging (X-rays, MRIs), clinical narratives, and structured patient data to enhance disease prediction accuracy. My work involves building data pipelines, leveraging Large Language Models (LLMs) and Vision-Language Models (VLMs) for cross-modal reasoning, and applying prompt engineering and NLP techniques to extract insights from unstructured healthcare text. I train and deploy deep learning models using PyTorch, TensorFlow, and High-Performance Computing (HPC) systems, while collaborating closely with medical researchers, AI engineers, and data scientists to bridge technical innovation with real-world healthcare impact.</p>
-        </div>
-        <div class="exp-card">
-            <h3>Machine Learning Intern - Care Risk Solutions</h3>
-            <p>During my internship at Care Risk Solution, I developed machine learning models for large-scale banking data analysis to identify credit risk patterns, achieving a 15% improvement in prediction accuracy. I explored quantum-inspired optimization methods, including Variational Quantum Classifiers (VQCs) and quantum kernel approaches, comparing them with classical ML models. My contributions included building robust feature engineering pipelines, optimizing data preprocessing workflows, and implementing classification and regression techniques using Python, Scikit-learn, and NumPy, resulting in reduced processing time and enhanced model performance.</p>
-        </div>
-        <div class="exp-card">
-            <h3>Data Analytics Intern - Bhundal Infotech</h3>
-            <p>At Bhundal Infotech, I streamlined operations by creating end-to-end automation workflows with UiPath, reducing manual effort and improving data accuracy. I developed SQL-based pipelines for data extraction, validation, and storage, ensuring timely and reliable information flow. By collaborating with business teams, I designed automation solutions that increased process efficiency by 20% and integrated RPA solutions with APIs for seamless execution. My work also focused on eliminating data bottlenecks, supporting reporting optimization, and ensuring smooth scalability for automation initiatives.</p>
-        </div>
-    </section>
+    <div class="hero-inner">
+      <div class="hero-content reveal">
 
-    <!-- Filter Buttons -->
-        <div class="filter-btns">
-            <button data-filter="all" class="active">All</button>
-            <button data-filter="ml">Machine Learning</button>
-            <button data-filter="viz">Data Visualization</button>
+        <div class="hero-available" role="status">
+          <span class="available-dot" aria-hidden="true"></span>
+          Available for full-time roles
         </div>
 
-        <div class="project-container">
-            <div class="project-card" data-category="viz">
-                <h3>Global Energy Trend</h3>
-                <p>EDA on 100+ years of energy data with SQL, Python, and dashboards.</p>
-                <a href="https://github.com/DevashreePawar/Global-Energy-Trend" target="_blank">View Project</a>
+        <h1 class="hero-name">Devashree<br><span class="name-teal">Pawar</span></h1>
+
+        <p class="hero-role">Data Analyst &amp; AI Engineer</p>
+
+        <p class="hero-tagline">
+          I build AI tools that turn analyst hours into minutes, without losing the part that matters: <em>trust in the answer.</em>
+        </p>
+
+        <div class="hero-credentials" aria-label="Credentials">
+          <span>MS Data Science · University of Arizona</span>
+          <span>Outstanding Master's Student</span>
+          <span>GHC Scholar · 3.89 GPA</span>
+        </div>
+
+        <div class="hero-skill-tags" aria-label="Core skills">
+          <span>LLM Agents</span>
+          <span>NL2SQL</span>
+          <span>Multi-Agent ML</span>
+          <span>SQL</span>
+          <span>Python</span>
+          <span>Dashboards</span>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
+        </div>
+
+        <nav class="hero-socials" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/devashreepawar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/DevashreePawar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://substack.com/@devashreepawar" target="_blank" rel="noopener noreferrer" aria-label="Substack">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+            </svg>
+            <span>Substack</span>
+          </a>
+          <a href="mailto:devupawar21@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>Email</span>
+          </a>
+        </nav>
+
+      </div>
+
+      <div class="hero-photo-wrap reveal reveal-delay-2">
+        <div class="hero-photo-frame">
+          <img src="assets/Profile.JPG" alt="Devashree Pawar" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section id="about" aria-label="About me">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <p class="section-label">About</p>
+          <div class="about-photo-wrap">
+            <img src="assets/005A8573.jpg" alt="Devashree Pawar" class="about-photo" loading="lazy">
+          </div>
+          <h2 class="about-headline">
+            I turn messy data<br>into trusted decisions.
+          </h2>
+        </div>
+        <div class="about-right reveal reveal-delay-1">
+          <p class="about-body">
+            I'm a Data Analyst and AI Engineer with experience building analytics systems, explainable models, LLM-powered validation tools, and autonomous agents. I've shipped projects across healthcare, financial services, GTM analytics, and academic research, combining SQL, machine learning, dashboards, prompt engineering, and production AI validation to help teams move from raw data to trusted decisions faster.
+          </p>
+          <ul class="about-principles" aria-label="Working principles">
+            <li>
+              <span class="principle-icon" aria-hidden="true">→</span>
+              <div>
+                <strong>I start with the business question, not the data.</strong>
+                <span> The right question shapes every modeling, SQL, and design choice.</span>
+              </div>
+            </li>
+            <li>
+              <span class="principle-icon" aria-hidden="true">→</span>
+              <div>
+                <strong>I ship dashboards people actually use.</strong>
+                <span> One chart domain experts trust beats five polished charts no one opens.</span>
+              </div>
+            </li>
+            <li>
+              <span class="principle-icon" aria-hidden="true">→</span>
+              <div>
+                <strong>I use AI to reduce repetitive analyst work.</strong>
+                <span> Agents for leverage, not novelty. Measured in analyst hours saved.</span>
+              </div>
+            </li>
+            <li>
+              <span class="principle-icon" aria-hidden="true">→</span>
+              <div>
+                <strong>I value explainability, trust, and measurable impact.</strong>
+                <span> Models ship with SHAP, confidence intervals, and business context.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+  ============================================================ -->
+  <section id="skills" aria-label="Skills and technologies">
+    <div class="section-inner">
+      <header class="section-header">
+        <p class="section-label reveal">Toolkit</p>
+        <h2 class="section-title reveal reveal-delay-1">Skills &amp; Technologies</h2>
+      </header>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Programming &amp; Data</h3>
+          <div class="skill-tags">
+            <span><i class="devicon-python-plain colored" aria-hidden="true"></i>Python</span><span><i class="devicon-postgresql-plain colored" aria-hidden="true"></i>SQL</span><span><i class="devicon-r-plain colored" aria-hidden="true"></i>R</span><span><i class="devicon-julia-plain colored" aria-hidden="true"></i>Julia</span><span><i class="devicon-javascript-plain colored" aria-hidden="true"></i>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-1">
+          <h3 class="skill-group-title">Machine Learning &amp; AI</h3>
+          <div class="skill-tags">
+            <span><i class="devicon-scikitlearn-plain colored" aria-hidden="true"></i>scikit-learn</span><span><i class="devicon-pytorch-plain colored" aria-hidden="true"></i>PyTorch</span><span><i class="devicon-tensorflow-original colored" aria-hidden="true"></i>TensorFlow</span><span>LLMs</span><span>VLMs</span><span>Prompt Engineering</span><span>NLP</span><span>SHAP</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-2">
+          <h3 class="skill-group-title">Analytics &amp; Visualization</h3>
+          <div class="skill-tags">
+            <span>Power BI</span><span>Tableau</span><span>Shiny</span><span>ggplot2</span><span>Dashboards</span><span>Reporting</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-3">
+          <h3 class="skill-group-title">Data Engineering &amp; Automation</h3>
+          <div class="skill-tags">
+            <span><i class="devicon-fastapi-plain colored" aria-hidden="true"></i>FastAPI</span><span>APIs</span><span>UiPath RPA</span><span><i class="devicon-amazonwebservices-plain-wordmark colored" aria-hidden="true"></i>AWS DynamoDB</span><span>ETL Pipelines</span><span>Web Scraping</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-4">
+          <h3 class="skill-group-title">AI Systems</h3>
+          <div class="skill-tags">
+            <span>NL2SQL Agents</span><span>ReAct Loops</span><span>Multi-Agent Systems</span><span>LLM Validation</span><span>Semantic Caching</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE
+  ============================================================ -->
+  <section id="experience" aria-label="Work experience">
+    <div class="section-inner">
+      <header class="section-header">
+        <p class="section-label reveal">Career</p>
+        <h2 class="section-title reveal reveal-delay-1">Experience</h2>
+      </header>
+
+      <div class="timeline" role="list">
+
+        <article class="timeline-item reveal" role="listitem">
+          <div class="tl-left">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-line" aria-hidden="true"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-meta">
+              <span class="tl-date">Mar 2026 – Present</span>
+              <span class="tl-badge tl-badge--active">Current</span>
             </div>
-            <div class="project-card" data-category="viz">
-                <h3>Decoding E-commerce Trends</h3>
-                <p>Forecasted seasonal sales with R and Power BI.</p>
+            <h3 class="tl-role">AI Strategy Intern</h3>
+            <p class="tl-company">ServiceIO Consultancy Services · Lewes, DE</p>
+            <ul class="tl-bullets">
+              <li>Built and shipped an account-scoring model and ROI calculator that prioritized 19 target accounts (4 strategic, 15 enterprise) by AI-readiness, quantifying dollar-value impact of ServiceNow AI workflows for prospective clients.</li>
+              <li>Engineered an extensible site-scraping and intent-data pipeline (BaseScraper architecture) surfacing buying signals across 3 sources and 22 entry points. New sources plug in with minimal boilerplate.</li>
+              <li>Curated a 100+ use-case library mapping AI workflows to cost savings, UX gains, and operational risk reduction; authored client-ready narratives and delivery governance frameworks for 4 named prospects.</li>
+            </ul>
+            <div class="tl-tags"><span>NLP</span><span>Python</span><span>Web Scraping</span><span>GTM Analytics</span><span>Account Scoring</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal reveal-delay-1" role="listitem">
+          <div class="tl-left">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-line" aria-hidden="true"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-meta">
+              <span class="tl-date">Jan 2026 – May 2026</span>
             </div>
-            <div class="project-card" data-category="ml">
-                <h3>Bankruptcy Risk Prediction</h3>
-                <p>Achieved 96% accuracy using XGBoost, deployed via Azure MLOps.</p>
+            <h3 class="tl-role">Data Quality &amp; Assurance Analyst</h3>
+            <p class="tl-company">University of Arizona · Tucson, AZ</p>
+            <ul class="tl-bullets">
+              <li>Owned the validation framework gating LLM-generated outputs for a system serving 45,000+ users on AWS DynamoDB. The system ran 13 automated checks across structural integrity, business-logic compliance, and downstream eligibility.</li>
+              <li>Cut domain-expert review backlog by automating 13 QA checks that previously required manual policy review per output, translating expert knowledge into deterministic rules the engineering team could ship against.</li>
+              <li>Surfaced upstream data inconsistencies before production by shifting QA from catch-it-late to fix-it-at-source, evaluating model outputs against institutional policy.</li>
+            </ul>
+            <div class="tl-tags"><span>AWS DynamoDB</span><span>LLM Validation</span><span>Python</span><span>QA Automation</span><span>Policy Compliance</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal reveal-delay-2" role="listitem">
+          <div class="tl-left">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-line" aria-hidden="true"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-meta">
+              <span class="tl-date">May 2025 – Dec 2025</span>
             </div>
+            <h3 class="tl-role">Student Researcher</h3>
+            <p class="tl-company">University of Arizona · Tucson, AZ</p>
+            <ul class="tl-bullets">
+              <li>Invented a Multimodal Mixture-of-Experts (MMoE) architecture integrating X-rays, MRI scans, clinical notes, and structured EMR records for disease prediction, achieving a 20% accuracy gain over single-modality baselines.</li>
+              <li>Built and trained models on UArizona's HPC infrastructure using PyTorch and TensorFlow with distributed GPU compute, making multimodal training tractable at research scale.</li>
+              <li>Translated model outputs into diagnostic insights clinicians could act on, earning trust with cross-disciplinary medical researchers and AI engineers.</li>
+            </ul>
+            <div class="tl-tags"><span>PyTorch</span><span>TensorFlow</span><span>HPC</span><span>Healthcare AI</span><span>MMoE</span><span>NLP</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal reveal-delay-3" role="listitem">
+          <div class="tl-left">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-line" aria-hidden="true"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-meta">
+              <span class="tl-date">May 2023 – Jul 2024</span>
+            </div>
+            <h3 class="tl-role">Machine Learning Intern</h3>
+            <p class="tl-company">CareEdge Group · Mumbai</p>
+            <ul class="tl-bullets">
+              <li>Built credit risk classification models on 500K+ banking customer records, lifting prediction accuracy 15% over the team's prior baseline. The results fed directly into the firm's risk-rating workflow.</li>
+              <li>Explored quantum-inspired ML including variational quantum classifiers and quantum kernel methods, benchmarking against classical SVMs and presenting findings to senior analysts.</li>
+              <li>Engineered preprocessing and feature pipelines that cut model-prep time by 20%, covering transactional, demographic, and credit-bureau data sources.</li>
+            </ul>
+            <div class="tl-tags"><span>scikit-learn</span><span>Python</span><span>Feature Engineering</span><span>Risk Modeling</span><span>Quantum ML</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal reveal-delay-4" role="listitem">
+          <div class="tl-left">
+            <div class="tl-dot" aria-hidden="true"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-meta">
+              <span class="tl-date">Dec 2022 – Feb 2023</span>
+            </div>
+            <h3 class="tl-role">Data Analytics &amp; Automation Intern</h3>
+            <p class="tl-company">Bhundal Infotech · Mumbai</p>
+            <ul class="tl-bullets">
+              <li>Automated 3 high-volume reporting workflows using UiPath RPA, eliminating 15 hours/week of manual data processing for the operations team.</li>
+              <li>Built SQL extraction and validation pipelines plus API integrations connecting 4+ enterprise data sources, increasing reporting reliability and cutting end-to-end process time by 20%.</li>
+            </ul>
+            <div class="tl-tags"><span>UiPath RPA</span><span>SQL</span><span>Process Automation</span><span>API Integration</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+  ============================================================ -->
+  <section id="projects" aria-label="Featured projects">
+    <div class="section-inner">
+      <header class="section-header">
+        <p class="section-label reveal">Featured Projects</p>
+        <h2 class="section-title reveal reveal-delay-1">What I've Built &amp; Shipped</h2>
+      </header>
+
+      <div class="filter-row reveal reveal-delay-2" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="ai-agents" role="tab" aria-selected="false">AI Agents</button>
+        <button class="filter-btn" data-filter="analytics" role="tab" aria-selected="false">Analytics</button>
+        <button class="filter-btn" data-filter="healthcare" role="tab" aria-selected="false">Healthcare</button>
+        <button class="filter-btn" data-filter="financial" role="tab" aria-selected="false">Financial Services</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- InsightCanvas -->
+        <article class="project-card reveal project-card--featured" data-category="ai-agents">
+          <div class="card-accent card-accent--teal"></div>
+          <div class="card-body">
+            <div class="card-meta-row">
+              <div class="card-impact">Full-Stack AI Data Visualization Agent</div>
+              <span class="card-new-badge">New</span>
+            </div>
+            <h3 class="card-title">InsightCanvas</h3>
+            <p class="card-desc">I built InsightCanvas as a full-stack AI data visualization agent that transforms uploaded datasets into interactive charts, dashboard-style analysis, and plain-English insights. Upload a CSV, Excel, or JSON file. The agent profiles your data first (column types, cardinality, missing values, sensitive-field detection), selects the right visualization across 7 analysis types, and explains its reasoning. Two modes: Quick Insight for a single focused answer, Full Dashboard for a multi-chart exploratory report. Every result ships with data-quality warnings and follow-up question suggestions, powered by optional OpenAI/LangChain reasoning.</p>
+            <div class="card-tags">
+              <span>React</span><span>Tailwind</span><span>FastAPI</span><span>Pandas</span><span>Plotly</span><span>SQLite</span><span>LLMs</span><span>Python</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://insightcanvas-cyan.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-btn">Live Demo</a>
+            <a href="https://github.com/DevashreePawar/InsightCanvas" target="_blank" rel="noopener noreferrer" class="card-btn card-btn--ghost">GitHub</a>
+          </div>
+        </article>
+
+        <!-- NL2SQL Agent -->
+        <article class="project-card reveal" data-category="ai-agents">
+          <div class="card-accent card-accent--teal"></div>
+          <div class="card-body">
+            <div class="card-impact">3× Reliability Lift</div>
+            <h3 class="card-title">NL2SQL Agent</h3>
+            <p class="card-desc">Built a ReAct-style self-correcting agent that translates plain English into validated, runnable SQL. The agent executes queries, catches errors, self-corrects, and generates business-ready analysis reports. No data team required.</p>
+            <div class="card-tags">
+              <span>Python</span><span>SQL</span><span>ReAct</span><span>LLMs</span><span>FastAPI</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://www.linkedin.com/in/devashreepawar/" target="_blank" rel="noopener" class="card-btn">Build Story</a>
+            <a href="https://github.com/DevashreePawar" target="_blank" rel="noopener" class="card-btn card-btn--ghost">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Autonomous ML Lab -->
+        <article class="project-card reveal reveal-delay-1" data-category="ai-agents">
+          <div class="card-accent card-accent--teal"></div>
+          <div class="card-body">
+            <div class="card-impact">&lt; 3 Min Full ML Lifecycle</div>
+            <h3 class="card-title">Autonomous ML Laboratory</h3>
+            <p class="card-desc">Five specialized agents (profiling, cleaning, experimenting, criticizing, and reporting) run the complete ML lifecycle end-to-end. The Critic agent catches overfitting before any result is trusted or shipped. No human needed in the loop for standard tasks.</p>
+            <div class="card-tags">
+              <span>Multi-Agent</span><span>Python</span><span>scikit-learn</span><span>LLMs</span><span>Orchestration</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/DevashreePawar" target="_blank" rel="noopener" class="card-btn card-btn--ghost">GitHub</a>
+          </div>
+        </article>
+
+        <!-- LLM Validation -->
+        <article class="project-card reveal reveal-delay-2" data-category="ai-agents">
+          <div class="card-accent card-accent--teal"></div>
+          <div class="card-body">
+            <div class="card-impact">0 Malformed Outputs · 45K+ Users</div>
+            <h3 class="card-title">LLM Degree Plan Validation Framework</h3>
+            <p class="card-desc">Owned the production validation layer for an LLM-generated degree planning system at the University of Arizona. Built 13 automated QA checks covering structural integrity, business-logic compliance, downstream eligibility, and institutional policy. Every malformed output got blocked before it reached a student.</p>
+            <div class="card-tags">
+              <span>Python</span><span>AWS DynamoDB</span><span>LLM QA</span><span>Validation</span><span>FastAPI</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/DevashreePawar" target="_blank" rel="noopener" class="card-btn card-btn--ghost">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Healthcare Risk -->
+        <article class="project-card reveal" data-category="healthcare">
+          <div class="card-accent card-accent--teal"></div>
+          <div class="card-body">
+            <div class="card-impact">305K+ Records · Explainable Model</div>
+            <h3 class="card-title">Healthcare Risk &amp; Readmission Analytics</h3>
+            <p class="card-desc">Modeled 305,000+ healthcare records to predict 30-day readmission risk. Built an explainable model with SHAP values plus a Shiny dashboard that domain experts (not just data scientists) actually navigate and trust. Answered "who's at risk, and why?" in terms clinicians could act on.</p>
+            <div class="card-tags">
+              <span>Python</span><span>R</span><span>SHAP</span><span>Shiny</span><span>SQL</span><span>XGBoost</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://8etlvn-devashree-pawar.shinyapps.io/healthcare-data-science-project/" target="_blank" rel="noopener noreferrer" class="card-btn">Live Demo</a>
+            <a href="https://github.com/DevashreePawar" target="_blank" rel="noopener" class="card-btn card-btn--ghost">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Credit Risk -->
+        <article class="project-card reveal reveal-delay-1" data-category="financial">
+          <div class="card-accent card-accent--teal"></div>
+          <div class="card-body">
+            <div class="card-impact">+15% Accuracy · −20% Prep Time</div>
+            <h3 class="card-title">Credit Risk Classification at Scale</h3>
+            <p class="card-desc">Built credit risk classification models on 500K+ banking customer records, lifting prediction accuracy 15% over the team's prior baseline. Engineered preprocessing and feature pipelines covering transactional, demographic, and credit-bureau data that cut model-prep time by 20% and became the team's default workflow.</p>
+            <div class="card-tags">
+              <span>Python</span><span>scikit-learn</span><span>Feature Engineering</span><span>SQL</span><span>Risk Modeling</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/DevashreePawar" target="_blank" rel="noopener" class="card-btn card-btn--ghost">GitHub</a>
+          </div>
+        </article>
+
+        <!-- GTM Analytics -->
+        <article class="project-card reveal reveal-delay-2" data-category="analytics">
+          <div class="card-accent card-accent--teal"></div>
+          <div class="card-body">
+            <div class="card-impact">19 Enterprise Accounts Prioritized</div>
+            <h3 class="card-title">GTM AI Strategy Analytics</h3>
+            <p class="card-desc">Built account-scoring models and ROI calculators at ServiceIO to prioritize 19 enterprise targets by AI-readiness, quantifying dollar-value impact of ServiceNow AI workflows. Curated a 100+ use-case library mapping AI workflows to cost savings, UX gains, and operational risk reduction for client narratives.</p>
+            <div class="card-tags">
+              <span>Python</span><span>SQL</span><span>NLP</span><span>Web Scraping</span><span>GTM Analytics</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/DevashreePawar" target="_blank" rel="noopener" class="card-btn card-btn--ghost">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Global COVID-19 Analytics -->
+        <article class="project-card reveal reveal-delay-3" data-category="analytics">
+          <div class="card-accent card-accent--teal"></div>
+          <div class="card-body">
+            <div class="card-impact">Global Trend Analysis · Interactive Dashboard</div>
+            <h3 class="card-title">Global COVID-19 Analytics</h3>
+            <p class="card-desc">Built an interactive Shiny dashboard exploring global COVID-19 trends across cases, deaths, recoveries, and vaccination rates. Designed for non-technical users. Country-level filters, time-series comparisons, and dynamic charts let anyone explore the data without writing a single line of code.</p>
+            <div class="card-tags">
+              <span>R</span><span>Shiny</span><span>ggplot2</span><span>dplyr</span><span>Data Viz</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://8etlvn-devashree-pawar.shinyapps.io/COVID19Analysis/" target="_blank" rel="noopener noreferrer" class="card-btn">Live Demo</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION
+  ============================================================ -->
+  <section id="education" aria-label="Education">
+    <div class="section-inner">
+      <header class="section-header">
+        <p class="section-label reveal">Background</p>
+        <h2 class="section-title reveal reveal-delay-1">Education &amp; Awards</h2>
+      </header>
+      <div class="edu-grid">
+        <article class="edu-card reveal">
+          <div class="edu-badge">MS</div>
+          <div class="edu-info">
+            <h3 class="edu-degree">Master of Science in Data Science</h3>
+            <p class="edu-school">University of Arizona · Aug 2024 – May 2026</p>
+            <p class="edu-gpa">GPA 3.89</p>
+            <div class="edu-awards">
+              <span>Outstanding Master's Student</span>
+              <span>Grace Hopper Celebration Scholar</span>
+            </div>
+          </div>
+        </article>
+        <article class="edu-card reveal reveal-delay-1">
+          <div class="edu-badge">BE</div>
+          <div class="edu-info">
+            <h3 class="edu-degree">Bachelor of Engineering in AI &amp; Data Science</h3>
+            <p class="edu-school">Vidyavardhini's College of Engineering &amp; Technology · Jan 2021 – May 2024</p>
+            <p class="edu-gpa">University of Mumbai</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS, ACTIVITIES & INTERESTS
+  ============================================================ -->
+  <section id="certifications" aria-label="Certifications, activities, and interests">
+    <div class="section-inner">
+      <header class="section-header">
+        <p class="section-label reveal">Beyond the Work</p>
+        <h2 class="section-title reveal reveal-delay-1">Certifications, Activities &amp; Interests</h2>
+      </header>
+      <div class="cert-grid">
+
+        <div class="cert-block reveal">
+          <h3 class="cert-block-title">Certifications</h3>
+          <ul class="cert-list">
+            <li>
+              <span class="cert-icon" aria-hidden="true">✦</span>
+              <span>UiPath RPA Developer Advanced Certification</span>
+            </li>
+            <li>
+              <span class="cert-icon" aria-hidden="true">✦</span>
+              <span>Python Coursera Certification</span>
+            </li>
+            <li>
+              <span class="cert-icon" aria-hidden="true">✦</span>
+              <span>Industry-Focused Training Workshop</span>
+            </li>
+          </ul>
         </div>
-    </section>
+
+        <div class="cert-block reveal reveal-delay-1">
+          <h3 class="cert-block-title">Activities</h3>
+          <ul class="cert-list">
+            <li>
+              <span class="cert-icon" aria-hidden="true">✦</span>
+              <span>Member, Rewriting the Code</span>
+            </li>
+            <li>
+              <span class="cert-icon" aria-hidden="true">✦</span>
+              <span>Grace Hopper Celebration 2025 Attendee</span>
+            </li>
+            <li>
+              <span class="cert-icon" aria-hidden="true">✦</span>
+              <span>UA WILD in STEM Volunteer</span>
+            </li>
+            <li>
+              <span class="cert-icon" aria-hidden="true">✦</span>
+              <span>National Student Data Corp Volunteer</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cert-block reveal reveal-delay-2">
+          <h3 class="cert-block-title">Interests</h3>
+          <div class="cert-interest-tags">
+            <span>Financial Data Systems</span>
+            <span>Data Engineering</span>
+            <span>Analytics Automation</span>
+            <span>Classical Dance · Kathak</span>
+            <span>Event Management</span>
+            <span>Digital Marketing</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WRITING / BUILD LOG
+  ============================================================ -->
+  <section id="writing" aria-label="Writing and build log">
+    <div class="section-inner">
+      <header class="section-header">
+        <p class="section-label reveal">Writing</p>
+        <h2 class="section-title reveal reveal-delay-1">Build Log</h2>
+      </header>
+      <div class="writing-card reveal reveal-delay-2">
+        <div class="writing-left">
+          <div class="writing-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="writing-title">Substack · Build Log</h3>
+            <p class="writing-sub">substack.com/@devashreepawar</p>
+          </div>
+        </div>
+        <p class="writing-desc">
+          I write about building agentic AI systems, analytics workflows, and practical AI tools that save analyst time. Posts include build stories, design decisions, and lessons from shipping real systems. Not just theory.
+        </p>
+        <a href="https://substack.com/@devashreepawar" target="_blank" rel="noopener noreferrer" class="btn-primary writing-cta">
+          Read the Build Log
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact" aria-label="Contact">
+    <div class="contact-inner">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <p class="section-label reveal" style="text-align:center">Get in Touch</p>
+      <h2 class="contact-headline reveal reveal-delay-1">
+        Let's build data and AI systems<br>people actually use.
+      </h2>
+      <p class="contact-sub reveal reveal-delay-2">
+        Available for full-time Data Analyst, AI Engineer, and Analytics Engineer roles. Industry-open. Available immediately.
+      </p>
+      <div class="contact-ctas reveal reveal-delay-3">
+        <a href="mailto:devupawar21@gmail.com" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          Send an Email
+        </a>
+        <a href="https://www.linkedin.com/in/devashreepawar/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          Connect on LinkedIn
+        </a>
+        <a href="https://github.com/DevashreePawar" target="_blank" rel="noopener noreferrer" class="btn-ghost-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+          View GitHub
+        </a>
+      </div>
+      <p class="contact-email reveal reveal-delay-4">devupawar21@gmail.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Devashree Pawar</span>
+      <span>Built with HTML, CSS & JS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
