@@ -115,3 +115,118 @@ const sectionObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.45 });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+/* ================================================================
+   SKILL FILTER — click skill → scroll to usage in Projects + Experience
+================================================================ */
+const skillSpans = document.querySelectorAll('.skill-tags span[data-skill]');
+const timelineItems = document.querySelectorAll('.timeline-item');
+let activeSkill = null;
+
+/* Floating chip to clear the active skill filter */
+const skillChip = document.createElement('div');
+skillChip.className = 'skill-filter-chip';
+skillChip.innerHTML = '<span class="skill-chip-label"></span><button class="skill-chip-clear" aria-label="Clear skill filter">×</button>';
+skillChip.hidden = true;
+document.body.appendChild(skillChip);
+
+function resetSkillFilter() {
+  activeSkill = null;
+  skillSpans.forEach(s => s.classList.remove('skill-active'));
+  projectCards.forEach(card => {
+    card.classList.remove('hidden');
+    requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add('in-view')));
+  });
+  timelineItems.forEach(t => t.classList.remove('skill-dim'));
+  filterBtns.forEach(b => {
+    const isAll = b.dataset.filter === 'all';
+    b.classList.toggle('active', isAll);
+    b.setAttribute('aria-selected', isAll ? 'true' : 'false');
+  });
+  skillChip.hidden = true;
+}
+
+skillChip.querySelector('.skill-chip-clear').addEventListener('click', resetSkillFilter);
+
+skillSpans.forEach(span => {
+  span.addEventListener('click', () => {
+    const skill = span.dataset.skill;
+    if (activeSkill === skill) { resetSkillFilter(); return; }
+
+    activeSkill = skill;
+
+    /* Highlight the clicked skill tag */
+    skillSpans.forEach(s => s.classList.toggle('skill-active', s.dataset.skill === skill));
+
+    /* Filter project cards — hide non-matching, show matching */
+    projectCards.forEach(card => {
+      const matches = (card.dataset.skills || '').split(',').includes(skill);
+      if (matches) {
+        card.classList.remove('hidden');
+        card.classList.remove('in-view');
+        requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add('in-view')));
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    /* Dim non-matching experience items */
+    timelineItems.forEach(item => {
+      const matches = (item.dataset.skills || '').split(',').includes(skill);
+      item.classList.toggle('skill-dim', !matches);
+    });
+
+    /* Reset category filter buttons to All */
+    filterBtns.forEach(b => {
+      const isAll = b.dataset.filter === 'all';
+      b.classList.toggle('active', isAll);
+      b.setAttribute('aria-selected', isAll ? 'true' : 'false');
+    });
+
+    /* Show dismissible chip */
+    skillChip.querySelector('.skill-chip-label').textContent = span.textContent.trim();
+    skillChip.hidden = false;
+
+    /* Scroll to projects section */
+    const target = document.getElementById('projects');
+    const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 70;
+    window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - navH, behavior: 'smooth' });
+  });
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && activeSkill) resetSkillFilter();
+});
+
+/* ================================================================
+   LEFT COLUMN CAROUSEL
+================================================================ */
+const leftSlides = document.querySelectorAll('.left-slide');
+const lcDots    = document.querySelectorAll('.lc-dot');
+let lcCurrent   = 0;
+
+function lcGoTo(idx) {
+  const prev = lcCurrent;
+  lcCurrent = (idx + leftSlides.length) % leftSlides.length;
+  if (prev === lcCurrent) return;
+
+  leftSlides[prev].classList.add('exit');
+  leftSlides[prev].addEventListener('animationend', () => {
+    leftSlides[prev].classList.remove('active', 'exit');
+  }, { once: true });
+
+  leftSlides[lcCurrent].classList.add('active');
+
+  lcDots.forEach((d, i) => d.classList.toggle('active', i === lcCurrent));
+}
+
+lcDots.forEach((dot, i) => dot.addEventListener('click', () => lcGoTo(i)));
+
+/* Auto-advance every 4 s, pause on hover */
+const lcEl = document.getElementById('about-left-carousel');
+let lcTimer = setInterval(() => lcGoTo(lcCurrent + 1), 4000);
+lcEl.addEventListener('mouseenter', () => clearInterval(lcTimer));
+lcEl.addEventListener('mouseleave', () => {
+  lcTimer = setInterval(() => lcGoTo(lcCurrent + 1), 4000);
+});
+

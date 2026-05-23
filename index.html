@@ -125,14 +125,54 @@
   <section id="about" aria-label="About me">
     <div class="section-inner">
       <div class="about-grid">
-        <div class="about-left reveal">
+        <div class="about-left reveal" id="about-left-carousel">
           <p class="section-label">About</p>
-          <div class="about-photo-wrap">
-            <img src="assets/005A8573.jpg" alt="Devashree Pawar" class="about-photo" loading="lazy">
+
+          <div class="left-carousel">
+            <!-- Slide 1 -->
+            <div class="left-slide active">
+              <div class="about-photo-wrap">
+                <img src="assets/005A8573.jpg" alt="Devashree Pawar" class="about-photo" loading="lazy">
+              </div>
+              <h2 class="about-headline">
+                I turn messy data<br>into trusted decisions.
+              </h2>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="left-slide">
+              <div class="about-photo-wrap">
+                <img src="assets/Profile.JPG" alt="Devashree Pawar" class="about-photo" loading="lazy">
+              </div>
+              <h2 class="about-headline">
+                I build AI systems<br>that actually ship.
+              </h2>
+            </div>
+
+            <!-- Slide 3: Passions -->
+            <div class="left-slide">
+              <div class="passions-card">
+                <p class="passions-heading">What Drives Me</p>
+                <ul class="passions-list">
+                  <li>Classical Dance (Kathak)</li>
+                  <li>Financial Data Systems</li>
+                  <li>Data Engineering</li>
+                  <li>Analytics Automation</li>
+                  <li>Event Management</li>
+                  <li>Digital Marketing</li>
+                </ul>
+              </div>
+              <h2 class="about-headline">
+                Beyond the data,<br>here's what drives me.
+              </h2>
+            </div>
           </div>
-          <h2 class="about-headline">
-            I turn messy data<br>into trusted decisions.
-          </h2>
+
+          <div class="lc-dots">
+            <button class="lc-dot active" data-lc="0" aria-label="Slide 1"></button>
+            <button class="lc-dot" data-lc="1" aria-label="Slide 2"></button>
+            <button class="lc-dot" data-lc="2" aria-label="Slide 3: Passions"></button>
+          </div>
         </div>
         <div class="about-right reveal reveal-delay-1">
           <p class="about-body">
@@ -187,35 +227,35 @@
         <div class="skill-group reveal">
           <h3 class="skill-group-title">Programming &amp; Data</h3>
           <div class="skill-tags">
-            <span><i class="devicon-python-plain colored" aria-hidden="true"></i>Python</span><span><i class="devicon-postgresql-plain colored" aria-hidden="true"></i>SQL</span><span><i class="devicon-r-plain colored" aria-hidden="true"></i>R</span><span><i class="devicon-julia-plain colored" aria-hidden="true"></i>Julia</span><span><i class="devicon-javascript-plain colored" aria-hidden="true"></i>JavaScript</span>
+            <span data-skill="python"><i class="devicon-python-plain colored" aria-hidden="true"></i>Python</span><span data-skill="sql"><i class="devicon-postgresql-plain colored" aria-hidden="true"></i>SQL</span><span data-skill="r"><i class="devicon-r-plain colored" aria-hidden="true"></i>R</span><span data-skill="julia"><i class="devicon-julia-plain colored" aria-hidden="true"></i>Julia</span><span data-skill="javascript"><i class="devicon-javascript-plain colored" aria-hidden="true"></i>JavaScript</span>
           </div>
         </div>
 
         <div class="skill-group reveal reveal-delay-1">
           <h3 class="skill-group-title">Machine Learning &amp; AI</h3>
           <div class="skill-tags">
-            <span><i class="devicon-scikitlearn-plain colored" aria-hidden="true"></i>scikit-learn</span><span><i class="devicon-pytorch-plain colored" aria-hidden="true"></i>PyTorch</span><span><i class="devicon-tensorflow-original colored" aria-hidden="true"></i>TensorFlow</span><span>LLMs</span><span>VLMs</span><span>Prompt Engineering</span><span>NLP</span><span>SHAP</span>
+            <span data-skill="scikit-learn"><i class="devicon-scikitlearn-plain colored" aria-hidden="true"></i>scikit-learn</span><span data-skill="pytorch"><i class="devicon-pytorch-plain colored" aria-hidden="true"></i>PyTorch</span><span data-skill="tensorflow"><i class="devicon-tensorflow-original colored" aria-hidden="true"></i>TensorFlow</span><span data-skill="llms">LLMs</span><span data-skill="vlms">VLMs</span><span data-skill="prompt-engineering">Prompt Engineering</span><span data-skill="nlp">NLP</span><span data-skill="shap">SHAP</span>
           </div>
         </div>
 
         <div class="skill-group reveal reveal-delay-2">
           <h3 class="skill-group-title">Analytics &amp; Visualization</h3>
           <div class="skill-tags">
-            <span>Power BI</span><span>Tableau</span><span>Shiny</span><span>ggplot2</span><span>Dashboards</span><span>Reporting</span>
+            <span data-skill="power-bi">Power BI</span><span data-skill="tableau">Tableau</span><span data-skill="shiny">Shiny</span><span data-skill="ggplot2">ggplot2</span><span data-skill="dashboards">Dashboards</span><span data-skill="reporting">Reporting</span>
           </div>
         </div>
 
         <div class="skill-group reveal reveal-delay-3">
           <h3 class="skill-group-title">Data Engineering &amp; Automation</h3>
           <div class="skill-tags">
-            <span><i class="devicon-fastapi-plain colored" aria-hidden="true"></i>FastAPI</span><span>APIs</span><span>UiPath RPA</span><span><i class="devicon-amazonwebservices-plain-wordmark colored" aria-hidden="true"></i>AWS DynamoDB</span><span>ETL Pipelines</span><span>Web Scraping</span>
+            <span data-skill="fastapi"><i class="devicon-fastapi-plain colored" aria-hidden="true"></i>FastAPI</span><span data-skill="apis">APIs</span><span data-skill="uipath">UiPath RPA</span><span data-skill="aws-dynamodb"><i class="devicon-amazonwebservices-plain-wordmark colored" aria-hidden="true"></i>AWS DynamoDB</span><span data-skill="etl">ETL Pipelines</span><span data-skill="web-scraping">Web Scraping</span>
           </div>
         </div>
 
         <div class="skill-group reveal reveal-delay-4">
           <h3 class="skill-group-title">AI Systems</h3>
           <div class="skill-tags">
-            <span>NL2SQL Agents</span><span>ReAct Loops</span><span>Multi-Agent Systems</span><span>LLM Validation</span><span>Semantic Caching</span>
+            <span data-skill="nl2sql">NL2SQL Agents</span><span data-skill="react-loops">ReAct Loops</span><span data-skill="multi-agent">Multi-Agent Systems</span><span data-skill="llm-validation">LLM Validation</span><span data-skill="semantic-caching">Semantic Caching</span>
           </div>
         </div>
 
@@ -235,7 +275,7 @@
 
       <div class="timeline" role="list">
 
-        <article class="timeline-item reveal" role="listitem">
+        <article class="timeline-item reveal" role="listitem" data-skills="nlp,python,web-scraping">
           <div class="tl-left">
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-line" aria-hidden="true"></div>
@@ -256,7 +296,7 @@
           </div>
         </article>
 
-        <article class="timeline-item reveal reveal-delay-1" role="listitem">
+        <article class="timeline-item reveal reveal-delay-1" role="listitem" data-skills="python,aws-dynamodb,llm-validation,julia">
           <div class="tl-left">
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-line" aria-hidden="true"></div>
@@ -276,7 +316,7 @@
           </div>
         </article>
 
-        <article class="timeline-item reveal reveal-delay-2" role="listitem">
+        <article class="timeline-item reveal reveal-delay-2" role="listitem" data-skills="pytorch,tensorflow,nlp">
           <div class="tl-left">
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-line" aria-hidden="true"></div>
@@ -296,7 +336,7 @@
           </div>
         </article>
 
-        <article class="timeline-item reveal reveal-delay-3" role="listitem">
+        <article class="timeline-item reveal reveal-delay-3" role="listitem" data-skills="scikit-learn,python">
           <div class="tl-left">
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-line" aria-hidden="true"></div>
@@ -316,7 +356,7 @@
           </div>
         </article>
 
-        <article class="timeline-item reveal reveal-delay-4" role="listitem">
+        <article class="timeline-item reveal reveal-delay-4" role="listitem" data-skills="uipath,sql,apis">
           <div class="tl-left">
             <div class="tl-dot" aria-hidden="true"></div>
           </div>
@@ -359,7 +399,7 @@
       <div class="projects-grid" id="projects-grid">
 
         <!-- InsightCanvas -->
-        <article class="project-card reveal project-card--featured" data-category="ai-agents">
+        <article class="project-card reveal project-card--featured" data-category="ai-agents" data-skills="python,fastapi,llms,javascript,dashboards">
           <div class="card-accent card-accent--teal"></div>
           <div class="card-body">
             <div class="card-meta-row">
@@ -379,7 +419,7 @@
         </article>
 
         <!-- NL2SQL Agent -->
-        <article class="project-card reveal" data-category="ai-agents">
+        <article class="project-card reveal" data-category="ai-agents" data-skills="python,sql,llms,fastapi,nl2sql,react-loops">
           <div class="card-accent card-accent--teal"></div>
           <div class="card-body">
             <div class="card-impact">3× Reliability Lift</div>
@@ -396,7 +436,7 @@
         </article>
 
         <!-- Autonomous ML Lab -->
-        <article class="project-card reveal reveal-delay-1" data-category="ai-agents">
+        <article class="project-card reveal reveal-delay-1" data-category="ai-agents" data-skills="python,scikit-learn,llms,multi-agent">
           <div class="card-accent card-accent--teal"></div>
           <div class="card-body">
             <div class="card-impact">&lt; 3 Min Full ML Lifecycle</div>
@@ -412,7 +452,7 @@
         </article>
 
         <!-- LLM Validation -->
-        <article class="project-card reveal reveal-delay-2" data-category="ai-agents">
+        <article class="project-card reveal reveal-delay-2" data-category="ai-agents" data-skills="python,aws-dynamodb,llm-validation,fastapi">
           <div class="card-accent card-accent--teal"></div>
           <div class="card-body">
             <div class="card-impact">0 Malformed Outputs · 45K+ Users</div>
@@ -427,8 +467,25 @@
           </div>
         </article>
 
+        <!-- Student Degree Planner Tool -->
+        <article class="project-card reveal reveal-delay-3" data-category="ai-agents" data-skills="python,aws-dynamodb,llm-validation,julia">
+          <div class="card-accent card-accent--teal"></div>
+          <div class="card-body">
+            <div class="card-impact">45K+ Users · 13 Validation Checks</div>
+            <h3 class="card-title">Student Degree Planner Tool</h3>
+            <p class="card-desc">Built the LLM validation layer gating every AI-generated degree plan before it reaches a student at UArizona (45,000+ users). 13 automated checks cover structural integrity, academic logic (prerequisites, corequisites, credit loads), and graduation eligibility. Only validated plans persist in DynamoDB. Malformed plans never reach students. Translated advisor domain knowledge into automated QA the engineering team could ship against.</p>
+            <div class="card-meta">Jan 2026 – May 2026 · University of Arizona</div>
+            <div class="card-tags">
+              <span>Python</span><span>Julia</span><span>AWS DynamoDB</span><span>LLM Validation</span><span>Academic Policy Logic</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/DevashreePawar" target="_blank" rel="noopener" class="card-btn card-btn--ghost">GitHub</a>
+          </div>
+        </article>
+
         <!-- Healthcare Risk -->
-        <article class="project-card reveal" data-category="healthcare">
+        <article class="project-card reveal" data-category="healthcare" data-skills="python,r,shap,shiny,sql">
           <div class="card-accent card-accent--teal"></div>
           <div class="card-body">
             <div class="card-impact">305K+ Records · Explainable Model</div>
@@ -445,7 +502,7 @@
         </article>
 
         <!-- Credit Risk -->
-        <article class="project-card reveal reveal-delay-1" data-category="financial">
+        <article class="project-card reveal reveal-delay-1" data-category="financial" data-skills="python,scikit-learn,sql">
           <div class="card-accent card-accent--teal"></div>
           <div class="card-body">
             <div class="card-impact">+15% Accuracy · −20% Prep Time</div>
@@ -461,7 +518,7 @@
         </article>
 
         <!-- GTM Analytics -->
-        <article class="project-card reveal reveal-delay-2" data-category="analytics">
+        <article class="project-card reveal reveal-delay-2" data-category="analytics" data-skills="python,sql,nlp,web-scraping">
           <div class="card-accent card-accent--teal"></div>
           <div class="card-body">
             <div class="card-impact">19 Enterprise Accounts Prioritized</div>
@@ -477,7 +534,7 @@
         </article>
 
         <!-- Global COVID-19 Analytics -->
-        <article class="project-card reveal reveal-delay-3" data-category="analytics">
+        <article class="project-card reveal reveal-delay-3" data-category="analytics" data-skills="r,shiny,ggplot2,dashboards">
           <div class="card-accent card-accent--teal"></div>
           <div class="card-body">
             <div class="card-impact">Global Trend Analysis · Interactive Dashboard</div>
